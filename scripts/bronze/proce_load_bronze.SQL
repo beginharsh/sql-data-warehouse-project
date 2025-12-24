@@ -23,7 +23,7 @@ BEGIN -- USED TO GROUP MULTIPLE SQL QUERIES IN A UNIT.
 
 	DECLARE @start_time DATETIME, @end_time DATETIME, @batch_start_time DATETIME, @batch_end_time DATETIME;
 	BEGIN TRY -- THE CODE BLOCK WHICH CAN GIVE ERROR IS PUT INSIDE THIS BLOCK.
-		SET @batch_end_time = GETDATE();
+		SET @batch_start_time = GETDATE();
 		PRINT '=================================================================';
 		PRINT 'Loading Bronze Layer';
 		PRINT '=================================================================';
